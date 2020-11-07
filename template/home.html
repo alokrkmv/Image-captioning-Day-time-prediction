@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>
+            Intutive Dashboard
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <script>
+          $(document).ready(function() {
+            $('body').hide().delay(500).fadeIn(2200);
+            $('#intro').hide().delay(2700).fadeIn(2200);
+            $('#div1').hide().delay(3500).slideDown(2200);
+            $('#div2').hide().delay(5000).slideDown(2200);
+        });  
+        </script>
+        <style>
+            body, html {
+    height: 100%;
+}
+
+#bg { 
+    /* The image used */
+  
+    background-image: url("static/back.jpg");
+/*    background: black;*/
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.oly{
+    /* background-color:lightblue;*/
+    width:100% ;
+    height:100px;
+    color: #000300;
+    /* background-color: #00910A; */
+    /* background-image: linear-gradient(to bottom right, magenta, blue); */
+    /* background-image: linear-gradient(to bottom right,coral , darkmagenta); */
+    /* padding: 10px; */
+    background-color: deepskyblue;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow:
+    1px 1px 0 0 #014D06,
+    2px 2px 0 0 #014D06,
+    3px 3px 0 0 #014D06,
+    4px 4px 0 0 #014D06,
+    5px 5px 5px 0 #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-transition: background-color 0.2s linear;
+transition: background-color 0.2s linear;
+padding:1px;
+margin-top:20px;
+}
+.oly:active{
+    box-shadow: 1px 1px 5px 0 #000000;
+-webkit-box-shadow: 1px 1px 5px 0 #000000;
+-moz-box-shadow: 1px 1px 5px 0 #000000;
+top: 4px;
+left: 4px;
+}
+.oly:hover{
+    /* padding:5px; */
+    /* font-size: 30px;
+    color:black;
+    height: 30px; */
+
+    /* opacity: 0.5; */
+    cursor: pointer;
+    padding:3px;
+    /* background-image: linear-gradient(to bottom right,#536DFE , darkmagenta); */
+    background-color: orange;
+
+}
+        </style>
+        <!-- <script>
+
+        </script> -->
+    </head>
+    <body>
+        <div id="bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11" id="intro">
+                        <h2 style="margin-top:200px;color:white;font-family: 'Allerta Stencil', sans-serif;font-size:40px;">An Intutive dashboard for generating image captions and day,night predictions.</h2>
+                        <h2 style="text-align:center;color:#FFB74D;font-family: 'Courgette', cursive;">Designed by:</h2>
+                        <h2 style="text-align:center;color:#FFB74D;font-family: 'Courgette', cursive;">Alok Kumar</h2>
+                        <h2 style="text-align:center;color:#FFB74D;font-family: 'Courgette', cursive;">Ayushi Saxena</h2>
+                        <h2 style="text-align:center;color:#FFB74D;font-family: 'Courgette', cursive;">Lakshita Bhargava</h2>
+                    </div>
+                    <div class="col-sm-0"></div>
+                </div>
+                <div class="row">
+                        <div class="col-xs-0 col-md-4"></div>
+                        <div class="col-xs-12 col-md-4" style="margin-top:100px;" id="div1"> 
+                            <div class="oly olympi" id="NTSE" style="border-radius:5px;">
+                                <h1 style="text-align:center;font-size:30px;color:black;"><a href="http://localhost:5004/dashboard" style="text-decoration: none;color:black;">Launch Dashboard</a></h1>
+                            </div>
+    
+                        </div>
+                        <div class="col-xs-12 col-md-4" style="margin-top:100px;" id="div2">
+<!--
+                                <div class="oly olympi" id="NTSE" style="border-radius:5px;">
+                                    <h1 style="text-align:center;font-size:30px;color:black;"><a href="forecasting.html" style="text-decoration: none;color:black;">Launch Forecasting Dashboard</a></h1>
+                                </div>
+-->
+        
+                        </div>
+                        <div class="col-xs-0 col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
